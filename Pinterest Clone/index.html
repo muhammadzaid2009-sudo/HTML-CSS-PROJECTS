@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for search icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <!-- 1. Logo -->
+      <div class="logo">
+        <h2>Pinterest</h2>
+      </div>
+
+      <!-- 2. Explore + Search -->
+      <div class="search-section">
+        <button class="explore-btn">Explore</button>
+
+        <div class="search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <!-- 3. Nav Items -->
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Businesses</a></li>
+        <li><a href="#">Create</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+
+      <!-- 4. Buttons -->
+      <div class="auth-buttons">
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button>
+      </div>
+
+      <div class="hamburger">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-content">
+        <h1>
+          Get your next <br />
+          <span class="hero-span">weeknight dinner idea</span>
+        </h1>
+      </div>
+    </section>
+
+    <div class="gallery">
+      <h1>Pinterest Gallery</h1>
+      <section class="pin-container">
+        <div class="pin">
+          <img src="https://picsum.photos/300/400" alt="Gallery pin image 1" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/500" alt="Gallery pin image 2" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/350" alt="Gallery pin image 3" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/450" alt="Gallery pin image 4" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/380" alt="Gallery pin image 5" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/520" alt="Gallery pin image 6" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/510" alt="Gallery pin image 7" />
+        </div>
+
+        <div class="pin">
+          <img src="https://picsum.photos/300/470" alt="Gallery pin image 8" />
+        </div>
+      </section>
+    </div>
+
+    <section class="idea-text">
+      <h2>Bring your favorite ideas to life</h2>
+      <p>
+        With Pinterest, you can unlock tools that spark your creativity and help
+        you find more inspiration.
+      </p>
+    </section>
+
+    <section class="feature-section">
+      <!-- 1 -->
+      <div class="feature">
+        <img src="./images/sec-1.png" alt="Save ideas you love" />
+        <div class="feature-text">
+          <h3>Save ideas you love</h3>
+          <p>
+            Collect your favorite recipes, home inspiration and style ideas.
+          </p>
+          <button>Explore</button>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="feature reverse">
+        <img src="./images/sec2.png" alt="Discover new inspiration" />
+        <div class="feature-text">
+          <h3>Discover new inspiration</h3>
+          <p>Find ideas from creators and people around the world.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="feature">
+        <img src="./images/sec-3.png" alt="Turn ideas into reality" />
+        <div class="feature-text">
+          <h3>Turn ideas into reality</h3>
+          <p>Plan your projects and bring your creativity to life.</p>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-section">
+      <div class="signup-left">
+        <h2>Sign up to get your ideas</h2>
+      </div>
+
+      <div class="signup-right">
+        <div class="signup-card">
+          <h2>Welcome to Pinterest</h2>
+          <p>Find new ideas to try</p>
+
+          <input type="email" placeholder="Email" />
+
+          <input type="password" placeholder="Password" />
+          <small>Use 8 or more letters, numbers and symbols</small>
+
+          <label for="signup-dob">Date of birth</label>
+          <input id="signup-dob" type="date" />
+
+          <button class="continue-btn">Continue</button>
+
+          <p class="or">OR</p>
+
+          <p class="terms">
+            By continuing, you agree to Pinterest's Terms of Service and
+            acknowledge you've read our Privacy Policy.
+          </p>
+
+          <p class="login">Already a member? <span>Log in</span></p>
+          <p class="business">Create a free business account</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h2>Pinterest</h2>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-col">
+          <h4>Get the app</h4>
+          <p>iOS</p>
+          <p>Android</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <p>Explore</p>
+          <p>Shop</p>
+          <p>Users</p>
+          <p>Collections</p>
+          <p>Shopping</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help Center</h4>
+          <p>Policies</p>
+          <p>Terms of service</p>
+          <p>Privacy policy</p>
+          <p>Non-user notice</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+         const hamburger = document.querySelector(".hamburger i");
+      const navLinks = document.querySelector(".nav-links");
+      const authButtons = document.querySelector(".auth-buttons");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        authButtons.classList.toggle("active");
+
+        if (hamburger.classList.contains("fa-bars")) {
+          hamburger.classList.remove("fa-bars");
+          hamburger.classList.add("fa-xmark");
+        } else {
+          hamburger.classList.remove("fa-xmark");
+          hamburger.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>
